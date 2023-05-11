@@ -1,16 +1,9 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 4.0"
-    }
-  }
+provider "aws" {
+  profile      = "default"
+  region       = "ap-south-1"
+  version      = "3.74.0"
 }
 
-# Configure the AWS Provider
-provider "aws" {
-  region = "us-east-1"
-}
 resource "aws_instance" "sampleinstance" {
   ami                     = "ami-0dcc1e21636832c5d"
   instance_type           = "t2.micro"
