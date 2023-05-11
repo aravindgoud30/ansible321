@@ -1,6 +1,7 @@
 provider "aws" {
   region       = "ap-south-1"
 }
+
 resource "aws_instance" "sampleinstance" {
   ami                     = "ami-0dcc1e21636832c5d"
   instance_type           = "t2.micro"
@@ -10,11 +11,12 @@ resource "aws_instance" "sampleinstance" {
     Name = "sampleinstance"
   }
 }
+
 resource "aws_security_group" "samplegroup" {
   name        = "samplegroup"
   description = "allow sample traffic"
- }
-  ingress = [
+
+ ingress = [
     {
       description      = "TLS from VPC"
       from_port        = 0
@@ -39,5 +41,5 @@ resource "aws_security_group" "samplegroup" {
       self             = false
     }
   ]
-
+}
 
