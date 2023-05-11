@@ -25,6 +25,7 @@ resource "aws_security_group" "samplegroup" {
       cidr_blocks      = ["0.0.0.0/16"]
       ipv6_cidr_blocks = []
       prefix_list_ids  = []
+      security_groups = []
       self             = false
     }
   ]
@@ -38,6 +39,7 @@ resource "aws_security_group" "samplegroup" {
       cidr_blocks      = ["0.0.0.0/0"]
       ipv6_cidr_blocks = ["::/0"]
       prefix_list_ids  = []
+      security_groups = []
       self             = false
     }
   ]
