@@ -14,7 +14,7 @@ resource "aws_security_group" "samplegroup" {
   name        = "samplegroup"
   description = "allow sample traffic"
  }
-  ingress [
+  ingress = [
     {
     description      = "TLS from VPC"
     from_port        = 0
@@ -27,7 +27,7 @@ resource "aws_security_group" "samplegroup" {
     }
   ]
 
-  egress [
+  egress = [
     {
     description      = "egress"
     from_port        = 0
