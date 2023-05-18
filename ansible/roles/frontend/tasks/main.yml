@@ -6,7 +6,7 @@
 - name: Start nginx service
   ansible.builtin.service:
     name: nginx
-    state: started
+    state: restarted
     enabled: yes
 
 - name: download code
@@ -22,5 +22,11 @@
 - name: copy the html docs
   ansible.builtin.copy:
     src: /tmp/frontend-main/static/
-    dest: /usr/share/nginx/html/
+    dest: /usr/share/nginx/html
     remote_src: yes
+
+- name: copy roboshop config file
+  ansible.builtin.copy:
+    src: roboshop.conf
+    dest: /etc/nginx/default.d/roboshop.conf
+
