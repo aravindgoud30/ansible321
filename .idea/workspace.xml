@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4873e95f-79cc-4988-9634-44067f73f617" name="Changes" comment="m">
-      <change afterPath="$PROJECT_DIR$/ansible/roles/mongodb/files/mongodb.repo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible/roles/mongodb/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible/roboshop.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roboshop.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +44,7 @@
       <workItem from="1683739205572" duration="2236000" />
       <workItem from="1683780490521" duration="18944000" />
       <workItem from="1684378976373" duration="879000" />
-      <workItem from="1684403015006" duration="14539000" />
+      <workItem from="1684403015006" duration="14694000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1684419089719</created>

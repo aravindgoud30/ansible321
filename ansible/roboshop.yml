@@ -1,10 +1,10 @@
 - name: Setup frontend
-  hosts: frontend
+  hosts: all
   roles:
     - frontend
 
 - name: setup mongodb
-  hosts: mongodb
+  hosts: all
   become: true
   roles:
     - mongodb
