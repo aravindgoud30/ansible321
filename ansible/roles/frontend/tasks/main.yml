@@ -3,6 +3,12 @@
     name: nginx
     state: latest
 
+- name: Start nginx service
+  ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: yes
+
 - name: download code
   ansible.builtin.include_role:
     name: common
