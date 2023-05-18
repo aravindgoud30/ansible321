@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4873e95f-79cc-4988-9634-44067f73f617" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ansible/roles/frontend/files/roboshop.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible/roles/frontend/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/roles/frontend/tasks/main.yml" afterDir="false" />
     </list>
@@ -46,7 +45,7 @@
       <workItem from="1683739205572" duration="2236000" />
       <workItem from="1683780490521" duration="18944000" />
       <workItem from="1684378976373" duration="879000" />
-      <workItem from="1684403015006" duration="10985000" />
+      <workItem from="1684403015006" duration="11392000" />
     </task>
     <servers />
   </component>
