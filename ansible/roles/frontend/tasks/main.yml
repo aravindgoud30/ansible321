@@ -1,3 +1,20 @@
-- name: frontend setup
-  debug:
-    msg: Frontend
+- name: Install nginx
+  ansible.builtin.yum:
+    name: nginx
+    state: latest
+
+- name: Start nginx service
+  ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: yes
+
+- name: download code
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: download
+
+- name: Remove all files
+  ansible.builtin.file:
+    path: /usr/share/nginx/html
+    state: absent
